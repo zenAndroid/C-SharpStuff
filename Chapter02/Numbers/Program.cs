@@ -1,16 +1,11 @@
-﻿// three variables that store the number 2 million
-int decimalNotation = 2_000_000;
-int binaryNotation = 0b_0001_1110_1000_0100_1000_0000;
-int hexadecimalNotation = 0x_001E_8480;
-// check the three variables have the same value
-// both statements output true
-Console.WriteLine($"{decimalNotation == binaryNotation}");
-Console.WriteLine(
-$"{decimalNotation == hexadecimalNotation}");
+﻿using System;
 
+Console.WriteLine($"int uses {sizeof(int)} bytes and can store numbers in the range { int.MinValue:N0} to { int.MaxValue:N0}.");
+Console.WriteLine($"double uses {sizeof(double)} bytes and can store numbers in the range { double.MinValue:N0} to { double.MaxValue:N0}.");
+Console.WriteLine($"decimal uses {sizeof(decimal)} bytes and can store numbers in the range { decimal.MinValue:N0} to { decimal.MaxValue:N0}.");
 
 /*
- * Output, unsurprinsingly, is:
-True
-True
+int uses 4 bytes and can store numbers in the range -2,147,483,648 to 2,147,483,647.
+double uses 8 bytes and can store numbers in the range -179,769,313,486,231,570,814,527,423,731,704,356,798,070,567,525,844,996,598,917,476,803,157,260,780,028,538,760,589,558,632,766,878,171,540,458,953,514,382,464,234,321,326,889,464,182,768,467,546,703,537,516,986,049,910,576,551,282,076,245,490,090,389,328,944,075,868,508,455,133,942,304,583,236,903,222,948,165,808,559,332,123,348,274,797,826,204,144,723,168,738,177,180,919,299,881,250,404,026,184,124,858,368 to 179,769,313,486,231,570,814,527,423,731,704,356,798,070,567,525,844,996,598,917,476,803,157,260,780,028,538,760,589,558,632,766,878,171,540,458,953,514,382,464,234,321,326,889,464,182,768,467,546,703,537,516,986,049,910,576,551,282,076,245,490,090,389,328,944,075,868,508,455,133,942,304,583,236,903,222,948,165,808,559,332,123,348,274,797,826,204,144,723,168,738,177,180,919,299,881,250,404,026,184,124,858,368.
+decimal uses 16 bytes and can store numbers in the range -79,228,162,514,264,337,593,543,950,335 to 79,228,162,514,264,337,593,543,950,335.
 */
