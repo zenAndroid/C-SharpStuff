@@ -7,6 +7,8 @@ if (assembly == null) return;
 // loop through the assemblies that this app references
 foreach (AssemblyName name in assembly.GetReferencedAssemblies())
 {
+    HttpClient client = new HttpClient();
+    System.Data.DataSet dataSet;
     // load the assembly so we can read its details
     Assembly a = Assembly.Load(name);
     // declare a variable to count the number of methods
@@ -25,8 +27,9 @@ foreach (AssemblyName name in assembly.GetReferencedAssemblies())
 }
 
 /*
-The output is: 
 0 types with 0 methods in System.Runtime assembly.
+458 types with 4,692 methods in System.Net.Http assembly.
+383 types with 6,854 methods in System.Data.Common assembly.
 106 types with 1,126 methods in System.Linq assembly.
 44 types with 645 methods in System.Console assembly.
 */
