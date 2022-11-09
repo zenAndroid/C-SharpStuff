@@ -17,6 +17,6 @@ static void Beta()
     catch (Exception ex)
     {
         WriteLine($"Caught this: {ex.Message}");
-        throw ex;
+        throw;
     }
 }
