@@ -5,11 +5,19 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factorial", "Factorial\Factorial.csproj", "{15475F66-9717-45E9-8B0C-712F61C4D06B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functional", "Functional\Functional.csproj", "{2468DC1B-D539-484D-B739-7ACFC9B508FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Functional", "Functional\Functional.csproj", "{2468DC1B-D539-484D-B739-7ACFC9B508FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debugging", "Debugging\Debugging.csproj", "{FA5E5C4F-824B-42F9-A0D0-1606A1E2A972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Debugging", "Debugging\Debugging.csproj", "{FA5E5C4F-824B-42F9-A0D0-1606A1E2A972}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrumenting", "Instrumenting\Instrumenting.csproj", "{B6D3D1D8-C7B0-40CA-9E91-145BF552E47C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instrumenting", "Instrumenting\Instrumenting.csproj", "{B6D3D1D8-C7B0-40CA-9E91-145BF552E47C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLib", "CalculatorLib\CalculatorLib.csproj", "{367616B4-67EE-4D55-A3D9-94642650F9EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLibUnitTests", "CalculatorLibUnitTests\CalculatorLibUnitTests.csproj", "{3A1CCF3E-8A49-4D18-B0E5-C50297CD2FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallStackExceptionHandlingLib", "CallStackExceptionHandlingLib\CallStackExceptionHandlingLib.csproj", "{76954FED-997A-46F7-A175-A161B7593205}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallStackExceptionHandling", "CallStackExceptionHandling\CallStackExceptionHandling.csproj", "{97180C8A-F65F-4A8F-A384-41DDD6A8A5F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{B6D3D1D8-C7B0-40CA-9E91-145BF552E47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6D3D1D8-C7B0-40CA-9E91-145BF552E47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6D3D1D8-C7B0-40CA-9E91-145BF552E47C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{367616B4-67EE-4D55-A3D9-94642650F9EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{367616B4-67EE-4D55-A3D9-94642650F9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{367616B4-67EE-4D55-A3D9-94642650F9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{367616B4-67EE-4D55-A3D9-94642650F9EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A1CCF3E-8A49-4D18-B0E5-C50297CD2FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A1CCF3E-8A49-4D18-B0E5-C50297CD2FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A1CCF3E-8A49-4D18-B0E5-C50297CD2FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A1CCF3E-8A49-4D18-B0E5-C50297CD2FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76954FED-997A-46F7-A175-A161B7593205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76954FED-997A-46F7-A175-A161B7593205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76954FED-997A-46F7-A175-A161B7593205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76954FED-997A-46F7-A175-A161B7593205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97180C8A-F65F-4A8F-A384-41DDD6A8A5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97180C8A-F65F-4A8F-A384-41DDD6A8A5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97180C8A-F65F-4A8F-A384-41DDD6A8A5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97180C8A-F65F-4A8F-A384-41DDD6A8A5F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
