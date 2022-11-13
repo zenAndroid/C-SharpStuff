@@ -9,7 +9,7 @@ public class Person : object
     public DateTime DateOfBirth;
     public List<Person> Children = new(); // C# 9 or later
                                           // methods
-    public EventHandler? Shout;
+    public event EventHandler? Shout;
     public int AngerLevel;
 
     public void Poke()
