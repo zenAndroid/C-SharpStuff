@@ -48,6 +48,12 @@ foreach (Person p in people)
 {
     WriteLine($" {p.Name}");
 }
+WriteLine("Use PersonComparer's IComparer implementation to sort:");
+Array.Sort(people, new PersonComparer());
+foreach (Person p in people)
+{
+    WriteLine($" {p.Name}");
+}
 /*
  * Initial list of people:
  Simon
@@ -59,4 +65,9 @@ Use Person's IComparable implementation to sort:
  Jenny
  Richard
  Simon
+Use PersonComparer's IComparer implementation to sort:
+ Adam
+ Jenny
+ Simon
+ Richard
 */ 
