@@ -2,7 +2,7 @@
 using static System.Console;
 namespace Packt.Shared;
 
-public class Person : object
+public class Person : IComparable<Person>
 {
     // fields
     public string? Name; // ? allows null
@@ -45,5 +45,11 @@ public class Person : object
     public Person ProcreateWith(Person partner)
     {
         return Procreate(this, partner);
+    }
+
+    public int CompareTo(Person? other)
+    {
+        if (Name is null) return 0;
+        return Name.CompareTo(other?.Name);
     }
 }

@@ -44,9 +44,19 @@ foreach (Person p in people)
 }
 WriteLine("Use Person's IComparable implementation to sort:");
 Array.Sort(people);
-
+foreach (Person p in people)
+{
+    WriteLine($" {p.Name}");
+}
 /*
- * Before adding the ICOMPARABLE INTERFACE:
- * Unhandled exception. System.InvalidOperationException: Failed to compare two elements in the array.
- ---> System.ArgumentException: At least one object must implement IComparable.
-*/
+ * Initial list of people:
+ Simon
+ Jenny
+ Adam
+ Richard
+Use Person's IComparable implementation to sort:
+ Adam
+ Jenny
+ Richard
+ Simon
+*/ 
