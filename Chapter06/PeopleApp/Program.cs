@@ -29,26 +29,24 @@ static void Harry_Shout(object? sender, EventArgs e)
 }
 
 harry.Shout += Harry_Shout;
-harry.Poke();
-harry.Poke();
-harry.Poke();
-harry.Poke();
 
-Console.WriteLine("----------------------------------");
+Person[] people =
+    {
+        new() { Name = "Simon" },
+        new() { Name = "Jenny" },
+        new() { Name = "Adam" },
+        new() { Name = "Richard" }
+    };
+WriteLine("Initial list of people:");
+foreach (Person p in people)
+{
+    WriteLine($" {p.Name}");
+}
+WriteLine("Use Person's IComparable implementation to sort:");
+Array.Sort(people);
 
-System.Collections.Hashtable lookupObject = new();
-
-lookupObject.Add(key: 'j', value: "Alpha");
-lookupObject.Add(key: "but", value: "Science");
-lookupObject.Add(key: 3, value: "Gamma");
-lookupObject.Add(key: harry, value: "Delta");
-
-var key = "but"; // lookup the value that has 2 as its key
-WriteLine(format: "Key `{0}` has value: {1}",
-arg0: key,
-arg1: lookupObject[key]);
-
-// lookup the value that has harry as its key
-WriteLine(format: "Key {0} has value: {1}",
-arg0: harry,
-arg1: lookupObject[harry]);
+/*
+ * Before adding the ICOMPARABLE INTERFACE:
+ * Unhandled exception. System.InvalidOperationException: Failed to compare two elements in the array.
+ ---> System.ArgumentException: At least one object must implement IComparable.
+*/
